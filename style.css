@@ -3,3 +3,106 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #333;
+}
+
+.header {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 180px;
+    font-size: 30px;
+    color: white;
+    /* background-color: black; */
+}
+
+.input input {
+    height: 50px;
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    border-bottom: 1px solid darkgreen;
+}
+
+.container {
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #5cb85c;
+    position: relative;
+    top: 200px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    animation-name: container;
+    animation-duration: 3s;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.box button {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.buttons {
+    margin: 10px;
+    padding: 10px;
+}
+
+.b0 {
+    grid-column: 2;
+}
+
+@keyframes container {
+    0% {
+        top: -300px;
+    }
+    100% {
+        top: 200px;
+    }
+}
