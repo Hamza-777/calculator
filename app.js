@@ -53,13 +53,15 @@ const result = function(e) {
         ans = a - b;
     } else if (y == 'x') {
         ans = a * b;
-    } else {
+    } else if (y == '/') {
         ans = a / b;
+    } else {
+        ans = a;
     }
 
     e.target.parentElement.parentElement.previousElementSibling.lastElementChild.value = ans;
 
-    // console.log(ans);
+    console.log(ans);
 
     e.preventDefault();
 }
