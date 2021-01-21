@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: 140px;
+    top: 80px;
     font-size: 30px;
     color: white;
     /* background-color: black; */
@@ -28,7 +28,7 @@ body {
     margin: auto;
     background-color: #5cb85c;
     position: relative;
-    top: 160px;
+    top: 100px;
     border-radius: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
     animation-name: container;
@@ -119,6 +119,6 @@ button:hover {
         top: -300px;
     }
     100% {
-        top: 160px;
+        top: 100px;
     }
 }
