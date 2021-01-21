@@ -68,7 +68,7 @@ input {
     background-color: black;
     color: #5cb85c;
     padding: 5px;
-    direction: rtl;
+    /* direction: rtl; */
 }
 
 input:focus {
