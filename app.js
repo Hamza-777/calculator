@@ -66,6 +66,15 @@ const result = function(e) {
     e.preventDefault();
 }
 
+// Disabled input from the keyboard
+
+document.addEventListener('keypress', function(e) {
+            
+            e.preventDefault();
+            return false;
+            
+        });
+
 // Event Listeners
 
 document.querySelector('.bAC').addEventListener('click', clearInput);
